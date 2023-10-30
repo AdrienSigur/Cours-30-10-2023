@@ -1,5 +1,12 @@
+header  {
+  text-align: center;
+}
+
+article {
+    border: 2px solid black;
+}
+
 #Image1 {
-  
-    width: 200px;
-   
+    width: 50%;
+    height: auto;
 }
