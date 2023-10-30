@@ -1,30 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="style.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <form> 
+        <fieldset>
+         <legend>Info Personnelles:</legend>    
 
-    <form>
-<label for="Prénom">Prénom:</label>      
-<input type="text" name="Prénom" placeholder="Entrez un prénom" maxlength="20" id="prénom">
-<br>
+<div>
+        <label for="Prénom">Prénom:</label>      
 
-<label for="Nom">Nom:</label>      
-<input type="text" name="Nom" placeholder="Entrez un Nom" maxlength="20" id="Nom">
+        <input type="text" name="Prénom" placeholder="Entrez un prénom" minlength="8" maxlength="30" id="prénom">
 
-<br>
+</div>
 
-<label for="E-mail">E-mail:</label>      
-<input type="text" name="E-mail" placeholder="Entrez un E-mail" maxlength="20" id="E-mail">
-<br>
+<div>
+        <label for="Nom">Nom:</label>      
 
-<label for="Numéro">Numéro:</label>      
-<input type="text" name="Numéro" placeholder="Entrez un Numéro" maxlength="20" id="prénom">
+          <input type="text" name="Nom" placeholder="Entrez un Nom" minlength="8" maxlength="30" id="Nom">
+</div>
+
+       <label for="E-mail">E-mail:</label>      
+          <input type="text" name="E-mail" placeholder="Entrez un E-mail" minlength="8" maxlength="30" id="E-mail">
+
+<div>
+
+     <label for="Numéro">Numéro:</label>      
+         <input type="text" name="Numéro" placeholder="Entrez un Numéro" minlength="8" maxlength="30" id="Numéro">
+
+</div>
+
+    <label for="password">Mot De passe:</label>
+         <input type="password" placeholder="Entrez votre Mot de passe" />
+         
+<div>
+
+   <label for="Age">Age:</label>
+   <input type="number" placeholder="Ex :18"/>
+
+</div>
+
+<div>
+   
+<textarea id="Commentaire" rows="10" cols="70" placeholder="Donnez un long commentaire"></textarea>
+
+</div>
+
+<div>
+
+<label for="date">Date de mon commentaire:</label>
+<input type="date" />
+
+</div>
+
+<div>
+
+<label for="file">Ma photo:</label>
+<input type="file"/>
+
+
+</div>
+
+</fieldset>
 
     </form>
+
+<form>
+
+    <fieldset>
+
+          <legend>Vous préférez</legend>
+<div>
+          <input type ="checkbox"  id="Checkbox1"/><label for="Checkbox1"></label>Le HTML</label>
+</div>
+<div>
+          <input type ="checkbox" id="Checkbox2"/><label for="Checkbox2">CSS</label>
+<div>
+          <input type ="checkbox" id="Checkbox3" /><label for="Checkbox3"></label>Le Javascript</label>
+ </div>
+         <input type="checkbox" id="Checkbox4"/><label for="Checkbox4"></label> Ne rien faire </label>
+ <div>
+     
+</div>
+</fieldset>
+
+</form>    
+<form>
+    
+<fieldset>
+ <legend>Vous vous levez</legend>
+<div>
+
+ <input type="radio" name="Le matin" id="Radio1"><label for="Le matin">Le matin </label>
+
+</div>
+
+<div>
+    <input type="radio" name="Le midi" id="Radio2"><label for="Le midi">Le midi </label>
+</div>
+
+<div>
+    <input type="radio" name="Le soir" id="Radio3"><label for="Le Soir">Le Soir </label>
+</div>
+
+<div>
+    <input type="radio" name="En retard" id="Radio4"><label for="En retard">En retard </label>
+</div>
+</fieldset>
+
+</form>
+<form>
+    <fieldset>
+<legend>Fin de formulaire</legend>
+
+
+      <label for="Liste">Vous en avez assez?</label>
+         <select name="Liste" id="Liste" >
+
+<optgroup label="Team Pas Encore">
+
+<option value="option1">J'en veux plus</option>
+<option value="option2">C'est super !</option>
+
+</optgroup>
+<optgroup label="Team Oula">
+
+    <option value="option1">J'en ai marre</option>
+    <option value="option2">Pitié !</option>
+    
+</optgroup>
+
+
+<input type="submit" value="Envoyer"/>
+
+<input type="submit" value="Reset"/>
+
+    </fieldset>
+</form>
     
 </body>
 </html>
