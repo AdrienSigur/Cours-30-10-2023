@@ -9,15 +9,15 @@
 <body>
 
  <header>
+<nav>
 
+    <div id="Image5">
 
-
- </header>   
-
-
- <nav>
-
-    <h1>Bienvenue sur mon site</h1>
+        <img src="../image/Lac.jpg">
+        
+    </div>
+    
+    <h1>Bienvenue sur mon site !</h1>
     
     <ul>
 
@@ -29,6 +29,7 @@
        
       </ul>
  </nav>
+</header> 
 
  <form>
 
@@ -37,12 +38,14 @@
         <legend>Contact</legend>
 
 <div>
-        <label for="Nom">Nom *</label>
-        <input type="text" name="Nom" placeholder="Ex : Robert"> 
+        <label class="Petitpoint">Nom</label>
+        <input type="text" name="Nom" placeholder="Ex : Robert" minlength="2" maxlength="20">
 </div>
+
 <div>
-    <label for="E-mail">E-mail *</label>
-    <input type="text" name="E-mail" placeholder="Ex :Robert " minlength="2" maxlength="20">
+
+    <label class ="Petitpoint">E-mail</label>
+    <input type="text" name="E-mail" placeholder="Ex : Jeanpierre@gmail.com " >
 </div>   
 <div>
     
@@ -52,13 +55,13 @@
    <textarea id="Commentary" rows="10"  cols="70"  name="Commentaire" placeholder="Ceci est un commentaire"></textarea>
 
 </div>
-
-<input type="checkbox" >Envoie d'une copie 
+<label for="checkbox">Envoie d'une copie :</label>
+<input type="checkbox" >
 
 </div>
 
-<input type="submit">
-<input type="reset">
+<input type="submit" value="Envoyer">
+<input type="reset" value="reset">
 
 </fieldset>
 
@@ -66,7 +69,7 @@
 
  <footer>
 
-    <div>
+    <div class="Fin">
 
 
         <ul><a href="Menu..">Menu 1</a></ul>
